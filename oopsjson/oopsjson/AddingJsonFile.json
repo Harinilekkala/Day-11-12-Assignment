@@ -1,18 +1,55 @@
-[
-  {
-    "name": "Rice",
-    "Price": "50",
-    "Weight": "100"
-  },
-  {
-    "name": "Pulses",
-    "price": "40",
-    "weight": "80"
-  },
-  {
-    "name": "wheat",
-    "price": "40",
-    "weight": "150"
-  }
-]
+{
+  "Rice": [
+    {
+      "name": "Rice1",
+      "price": "50",
+      "weight": "100"
+    },
+    {
+      "name": "Rice2",
+      "price": "40",
+      "weight": "80"
+    },
+    {
+      "name": "Rice3",
+      "price": "80",
+      "weight": "150"
+    }
+
+  ],
+  "Pulse": [
+    {
+      "name": "Pulse1",
+      "price": "50",
+      "weight": "100"
+    },
+    {
+      "name": "Pulse2",
+      "price": "40",
+      "weight": "80"
+    },
+    {
+      "name": "Pulse3",
+      "price": "80",
+      "weight": "150"
+    }
+  ],
+  "Wheat": [
+    {
+      "name": "wheat1",
+      "price": "50",
+      "weight": "100"
+    },
+    {
+      "name": "wheat2",
+      "price": "40",
+      "weight": "80"
+    },
+    {
+      "name": "wheat3",
+      "price": "80",
+      "weight": "150"
+    }
+  ]
+}
   

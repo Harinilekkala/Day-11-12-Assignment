@@ -9,23 +9,45 @@ namespace oopsjson
 {
     internal class InventoryManagementSyatem
     {
-        InventoryModelclass model = new InventoryModelclass();
-        List<InventoryModelclass> inventoryList = new List<InventoryModelclass>();
 
         
+        InventoryModelclass model = new InventoryModelclass();
+        List<InventoryModelclass> inventoryModelclasses = new List<InventoryModelclass>();
+        List<secondmodelclass> Rice;
+        List<secondmodelclass> Pulse;
+        List<secondmodelclass> Wheat;
+        
 
-        public void group(string jFilePath)
+        public void group(string jsonFilePath)
         {
-            using (StreamReader file = new StreamReader(jFilePath))
+            using (StreamReader reader = new StreamReader(jsonFilePath))
             {
-                var json = file.ReadToEnd();
-                var items = JsonConvert.DeserializeObject<List<InventoryModelclass>>(json);
-                foreach (var objects in items)
+                var json = reader.ReadToEnd();
+                InventoryModelclass items = JsonConvert.DeserializeObject<InventoryModelclass>(json);
+                InventoryModelclass inventoryModelclass = new InventoryModelclass();
+                Rice = items.Rice;
+                Pulse = items.Pulse;
+                Wheat = items.Wheat;
+                Console.WriteLine("Enter 1 for Rice");
+                Console.WriteLine("Enter 2 for Pulse");
+                Console.WriteLine("Enter 3 for Wheat");
+                int select = Convert.ToInt32(Console.ReadLine());
+                switch (select)
                 {
-                    Console.WriteLine(objects.Name + " " + objects.price + " " + objects.weight);
+                    case 1:
+                        foreach (var contact in Rice)
+                            Console.WriteLine(contact.Name + " " + contact.price + " " + contact.weight);
+                        break;
+                    case 2:
+                        foreach (var contact  in Pulse)
+                            Console.WriteLine(contact.Name + " " + contact.price + " " + contact.weight);
+                        break;
+                    case 3:
+                        foreach (var contact  in Wheat)
+                            Console.WriteLine(contact.Name + " " + contact.price + " " + contact.weight);
+                        break;
                 }
             }
-
-        }   
+        }
     }
 }

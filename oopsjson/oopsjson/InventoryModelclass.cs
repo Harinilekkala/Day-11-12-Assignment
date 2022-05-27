@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oopsjson
-{
+
+
     internal class InventoryModelclass
     {
-        public string Name { get; set; }
-        public int price { get; set; }
-        public double weight { get; set; }
+        
+        public List<secondmodelclass> Pulse { get;  set; }
+        public List<secondmodelclass> Rice { get;  set; }
+        public List<secondmodelclass> Wheat { get;  set; }
     }
-}
+
