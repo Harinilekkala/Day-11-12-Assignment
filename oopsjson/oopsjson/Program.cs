@@ -1,4 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-oopsjson.InventoryManagementSyatem json = new oopsjson.InventoryManagementSyatem();
+oopsjson.StockClass json = new oopsjson.StockClass();
 json.group(@"D:\.net\Day-11-12-Assignment\oopsjson\oopsjson\AddingJsonFile.json");
             

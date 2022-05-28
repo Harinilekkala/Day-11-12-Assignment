@@ -1,55 +1,17 @@
-{
-  "Rice": [
-    {
-      "name": "Rice1",
-      "price": "50",
-      "weight": "100"
-    },
-    {
-      "name": "Rice2",
-      "price": "40",
-      "weight": "80"
-    },
-    {
-      "name": "Rice3",
-      "price": "80",
-      "weight": "150"
-    }
-
-  ],
-  "Pulse": [
-    {
-      "name": "Pulse1",
-      "price": "50",
-      "weight": "100"
-    },
-    {
-      "name": "Pulse2",
-      "price": "40",
-      "weight": "80"
-    },
-    {
-      "name": "Pulse3",
-      "price": "80",
-      "weight": "150"
-    }
-  ],
-  "Wheat": [
-    {
-      "name": "wheat1",
-      "price": "50",
-      "weight": "100"
-    },
-    {
-      "name": "wheat2",
-      "price": "40",
-      "weight": "80"
-    },
-    {
-      "name": "wheat3",
-      "price": "80",
-      "weight": "150"
-    }
-  ]
-}
-  
+[
+  {
+    "StockName": "Reliance",
+    "Shareprice": "3000",
+    "NoOfShares": "20"
+  },
+  {
+    "StockName": "Airtel",
+    "Shareprice": "5000",
+    "NoOfShares": "10"
+  },
+  {
+    "StockName": "vodafone",
+    "Shareprice": "2000",
+    "NoOfShares": "40"
+  }
+]
